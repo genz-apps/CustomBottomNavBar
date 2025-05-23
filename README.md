@@ -40,3 +40,29 @@ allprojects {
         maven { url 'https://jitpack.io' }
     }
 }
+
+
+In your app-level build.gradle file:
+
+gradle
+Copy
+Edit
+dependencies {
+    implementation 'com.github.genz-apps:CustomBottomNavBar:1.0.0'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
