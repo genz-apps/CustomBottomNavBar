@@ -11,7 +11,7 @@ A sleek and customizable Bottom Navigation Bar for Android built in Java. It fea
 This library is **free to use for personal and individual development purposes**.  
 Redistribution, modification for re-publishing, or commercial usage is **strictly prohibited** without prior written permission.
 
-See the [LICENSE](LICENSE) file for full terms.
+See the [LICENSE](https://github.com/user-attachments/files/20415708/README.md) file for full terms.
 
 ---
 
