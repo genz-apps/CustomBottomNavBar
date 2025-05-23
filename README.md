@@ -32,7 +32,8 @@ To use this library via **JitPack**, follow these steps:
 
 In your **root `build.gradle`** file:
 
-```gradle
+```gradle```
+```
 allprojects {
     repositories {
         google()
@@ -50,17 +51,68 @@ Edit
 dependencies {
     implementation 'com.github.genz-apps:CustomBottomNavBar:1.0.0'
 }
+```
 
 
 
 
 
 
+#⚙️ Usage
+📍 XML Integration
+
+Add the custom navigation bar directly in your layout:
+```xml```
+```
+<com.genzapps.custombottomnavbar.CustomNavBar
+    android:id="@+id/customNavBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:circleDrawable="@drawable/my_circle"
+    app:curveDrawable="@drawable/my_curve"
+    app:menu="@menu/my_bottom_nav_menu" />
+```
+    
+# 💻 Java Integration
+Access and control the navigation programmatically:
+
+```java```
+```
+CustomNavBar customNavBar = findViewById(R.id.customNavBar);
+BottomNavigationView bottomNav = customNavBar.getBottomNav();
+
+bottomNav.setOnNavigationItemSelectedListener(item -> {
+    // Handle item selection
+    return true;
+});
+```
 
 
+**#🧩 Customization**
+✅ Use your own drawables for the animated circle via app:circleDrawable.
 
+✅ Customize the curved background with app:curveDrawable.
 
+✅ Replace the menu using app:menu="@menu/your_menu".
 
+**📬 Contact**
+For support or commercial licensing inquiries, please email:
+
+📧 hello.genzapps@gmail.com
+
+**🤝 Contributing**
+This project is not open for public contributions or redistribution forks.
+
+🔹 You may report bugs or suggest features by email only.
+**
+🔖 License Summary**
+✅ Allowed: Personal use and integration in your apps (including commercial apps).
+
+❌ Not Allowed: Reselling, redistribution, or publishing modified versions.
+
+❌ Not Allowed: Releasing the library publicly under a different name.
+
+See the [License](https://github.com/user-attachments/files/20415708/README.md) file for full terms.
 
 
 
